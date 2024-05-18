@@ -81,7 +81,7 @@ fn main() -> Result<()> {
     for field in &config.fields {
         map.insert(field.clone(), String::new());
         if !is_first {
-            write!(file, "{sep} ")?;
+            write!(file, "{sep}")?;
         } else {
             is_first = false;
         }
@@ -104,7 +104,7 @@ fn main() -> Result<()> {
         }
         for field in &config.fields {
             if !is_first {
-                write!(file, "{sep} ")?;
+                write!(file, "{sep}")?;
             } else {
                 is_first = false;
             }
