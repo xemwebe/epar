@@ -1,0 +1,14 @@
+[package]
+name = "epar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+config-file = "0.2.3"
+imap = "2.4.1"
+native-tls = "0.2.11"
+rpassword = "7.3.1"
+serde = { version = "1.0.202", features=["serde_derive"]}
+zeroize = {version = "1.7.0", features=["zeroize_derive"]}
+
